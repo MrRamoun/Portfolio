@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <!-- not sure if "type="text/css" is important-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+
+
+</head>
+<body>
+
+
+  <div class="pageOne text-center" id="page1">
+  <ul class ="nav nav-pills navbar-fixed-top" id="header_bar">
+       <li>      <a href="#page1">Polaris Coding</a> </li>
+        <!--# is normaly replaced by a link-->
+    <!--in this case we put #page2 or #page3 (which are the id's we gave those sections) so that cliking on these will make the page jump to those sections-->
+      <li class="pull-right">      <a href="#page4">Contact Me</a>    </li>
+      <li class="pull-right">      <a href="#page3">Portfolio</a>    </li>
+      <li class="pull-right">      <a href="#page2">About Me</a>    </li>
+
+    </ul>
+  <!--</div> this was used for the container-->
+  <div class="block text-center">
+    <h1>Polaris Coding</h1>
+    <h3>Always Learning. &nbsp Always Evolving. &nbsp Always Agile.</h3>
+  <!--  &nbsp (non-breaking space) is used to force a space   -->
+    </div>
+    <br/><br/>
+
+
+    <div class="btnList text-center">
+      <a class="btn btn-default paddingBTN" href="https://github.com/PolarisTLX" target="blank"><i class="fa fa-github" id="githubIcon"></i> GitHub</a>
+      <a class="btn btn-default paddingBTN" href="https://twitter.com/PolarisTLX" target="blank"><i class="fa fa-twitter" id="codepenIcon"></i> Twitter</a>
+      <a class="btn btn-default paddingBTN" href="https://www.linkedin.com/in/paul-rail-33345518/" target="blank"><i class="fa fa-linkedin" id="linkedinIcon"></i> LinkedIn</a>
+      <a class="btn btn-default paddingBTN" href="https://stackoverflow.com/users/7823083/polaristlx?tab=profile" target="blank"><i class="fa fa-stack-overflow" id="stackIcon"></i> Stack Overflow</a>
+      <a class="btn btn-default paddingBTN" href="https://codepen.io/PolarisTLX/" target="blank"><i class="fa fa-codepen" id="codepenIcon"></i> CodePen</a>
+
+      <!--id="linkedinIcon" is to be able to style this icon's color in the CSS portion. aria-hidden="true" dont know why it is there-->
+  <!-- link that has been styled to look like buttons-->
+    </div>
+    <br/>
+    <div class="follow">
+      <h4 class="smallBlock aboutMe text-center follow-text">Observe my dedication to learning by following my progress <br/> with #100DaysOfCode on Twitter or my activity on GitHub!</h4>
+    </div>
+  </div>
+
+  <div class="pageTwo" id="page2">
+    <!--we give id's, like "page2" here to use in the buttons above to jump to these sections respectively-->
+    <div class="aboutMe smallBlock">
+     <h1 class="text-center">About Me</h1>
+     <br/>
+      <h3 class="text-left">I'm a self taught full-stack developer based in Toronto, Canada with previous industry experience in engineering and finance.</h3>
+      <h3 class="text-left">I am passionate about being at the forefront of where the world is heading with programming and using technology to solve real world problems.</h3>
+    </div>
+
+    <br/>
+
+      <!-- My Skills section start -->
+          <div class="section text-center">
+              <h2 class="smallBlock codingSkills text-center">Coding Skills</h2> <br/>
+
+               <p class="skillList">
+                  HTML5 / CSS3 <br />
+                  <progress class="skill" min="0" max="100" value="75"></progress></br>
+                  <!-- CSS3 <br />
+                  <progress  class="skill" min="0" max="100" value="60"></progress></br> -->
+                  JavaScript / ES6 / jQuery <br />
+                  <progress class="skill" min="0" max="100" value="65"></progress></br>
+                  React <br />
+                  <progress class="skill" min="0" max="100" value="20"></progress></br>
+                  MongoDB / Mongoose.js <br />
+                  <progress class="skill" min="0" max="100" value="20"></progress></br>
+                  Node.js / Express.js <br />
+                  <progress class="skill" min="0" max="100" value="25"></progress></br>
+                  SQL <br />
+                  <progress class="skill" min="0" max="100" value="15"></progress></br>
+                  Python <br />
+                  <progress class="skill" min="0" max="100" value="25"></progress></br>
+               </p>
+          </div>
+          <!-- My Skills section end -->
+   </div>
+
+  <div class ="pageThree text-center" id="page3">
+    <div class="paddingTop">
+      <h1 class="smallBlock">Portfolio</h1>
+      <h2>Examples of my latest work</h2>
+    </div>
+
+    <div class="container">
+      <div class="row">
+      <div class="col-md-6">
+      <p data-height="300" data-theme-id="0" data-slug-hash="aWayNP" data-default-tab="result" data-user="PolarisTLX" data-embed-version="2" data-pen-title="Free Code Course Practice Project 1" class="codepen">See the Pen <a href="https://codepen.io/PolarisTLX/full/aWayNP/">Free Code Course Practice Project 1</a> by Paul (<a href="https://codepen.io/PolarisTLX">@PolarisTLX</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://codepen.io/PolarisTLX/full/aWayNP/"></script>
+        <a href="https://codepen.io/PolarisTLX/full/aWayNP/" target="blank"><h2>Tic-Tac-Toe Game</h2></a><!--puts a clickable link after the thumbnail preview-->
+      </div><!--this "<p data-height="265..." until "embed/ei.js"></script>" is a link to my previous CodePen project-->
+        <div class="col-md-6">
+      <p data-height="300" data-theme-id="0" data-slug-hash="wdxPav" data-default-tab="result" data-user="PolarisTLX" data-embed-version="2" data-pen-title="Free Code Course Practice Project 1" class="codepen">See the Pen <a href="https://codepen.io/PolarisTLX/pen//">Free Code Course Practice Project 1</a> by Paul (<a href="https://codepen.io/PolarisTLX">@PolarisTLX</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+          <a href="https://codepen.io/PolarisTLX/full/wdxPav/" target="blank"><h2>Functional Calculator</h2></a>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-md-6">
+      <p data-height="300" data-theme-id="0" data-slug-hash="MmqmRK" data-default-tab="result" data-user="PolarisTLX" data-embed-version="2" data-pen-title="Free Code Course Practice Project 1" class="codepen">See the Pen <a href="https://codepen.io/PolarisTLX/pen/zZQYRd/">Free Code Course Practice Project 1</a> by Paul (<a href="https://codepen.io/PolarisTLX">@PolarisTLX</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        <a href="https://codepen.io/PolarisTLX/full/MmqmRK/" target="blank"><h2>Pomodoro Clock</h2></a><!--puts a clickable link after the thumbnail preview-->
+      </div><!--this "<p data-height="265..." until "embed/ei.js"></script>" is a link to my previous CodePen project-->
+        <div class="col-md-6">
+      <p data-height="300" data-theme-id="0" data-slug-hash="Mmeyaq" data-default-tab="result" data-user="PolarisTLX" data-embed-version="2" data-pen-title="Free Code Course Practice Project 1" class="codepen">See the Pen <a href="https://codepen.io/PolarisTLX/pen/zZQYRd/">Free Code Course Practice Project 1</a> by Paul (<a href="https://codepen.io/PolarisTLX">@PolarisTLX</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+          <a href="https://codepen.io/PolarisTLX/full/Mmeyaq/" target="blank"><h2>Wikipedia Search API</h2></a>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-md-6">
+      <p data-height="300" data-theme-id="0" data-slug-hash="rmemZa" data-default-tab="result" data-user="PolarisTLX" data-embed-version="2" data-pen-title="Free Code Course Practice Project 1" class="codepen">See the Pen <a href="https://codepen.io/PolarisTLX/pen/zZQYRd/">Free Code Course Practice Project 1</a> by Paul (<a href="https://codepen.io/PolarisTLX">@PolarisTLX</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        <a href="https://codepen.io/PolarisTLX/full/rmemZa/" target="blank"><h2>Random Quote Generator</h2></a><!--puts a clickable link after the thumbnail preview-->
+      </div><!--this "<p data-height="265..." until "embed/ei.js"></script>" is a link to my previous CodePen project-->
+        <div class="col-md-6">
+      <p data-height="300" data-theme-id="0" data-slug-hash="zZQYRd" data-default-tab="result" data-user="PolarisTLX" data-embed-version="2" data-pen-title="Free Code Course Practice Project 1" class="codepen">See the Pen <a href="https://codepen.io/PolarisTLX/pen/zZQYRd/">Free Code Course Practice Project 1</a> by Paul (<a href="https://codepen.io/PolarisTLX">@PolarisTLX</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+          <a href="https://codepen.io/PolarisTLX/full/zZQYRd/" target="blank"><h2>Hamilton Webpage</h2></a>
+      </div>
+     </div>
+    </div>
+  </div>
+
+
+  <div class="pageFour text-center" id="page4">
+<h2 class="smallBlock">Contact Me  <!-- <a href="mailto:paul.a.rail@gmail.com">Click here for E-mail</a>--></h2>
+    <br/><br/><br/>
+
+        <a class="btn btn-default paddingBTN" href="mailto:paul.a.rail@gmail.com" target="blank"><i class="fa fa-envelope" id="githubIcon"></i> Email</a>
+        <a class="btn btn-default paddingBTN" href="https://github.com/PolarisTLX" target="blank"><i class="fa fa-github" id="githubIcon"></i> GitHub</a>
+        <a class="btn btn-default paddingBTN" href="https://codepen.io/PolarisTLX/" target="blank"><i class="fa fa-codepen" id="codepenIcon"></i> CodePen</a>
+        <a class="btn btn-default paddingBTN" href="https://stackoverflow.com/users/7823083/polaristlx?tab=profile" target="blank"><i class="fa fa-stack-overflow" id="stackIcon"></i> Stack Overflow</a>
+        <a class="btn btn-default paddingBTN" href="https://twitter.com/PolarisTLX" target="blank"><i class="fa fa-twitter" id="codepenIcon"></i> Twitter</a>
+        <a class="btn btn-default paddingBTN" href="https://www.linkedin.com/in/paul-rail-33345518/" target="blank"><i class="fa fa-linkedin" id="linkedinIcon"></i> LinkedIn</a>
+      </div>
+
+
+    <div class="footer text-center">
+
+      <p>Copyright @ Polaris Coding 2017. All Rights Reserved.</p>
+    </div>
+</body>
+
+
+<style>
+.block{
+  background-color: rgba(0, 0, 0, 0.6);
+  /* use rgba instead to apply opacity
+  opacity: .75;  */
+  padding: 10px 40px 5px 40px;
+  margin-top: 180px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display:inline-block;
+ }
+#header_bar {
+  background: rgba(0, 0, 0, 0.6);
+  /*height: 55px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10020;
+  display: inline;*/
+}
+
+.nav-pills{
+  font-size: 1.7em;
+  background-color: black;
+  margin-bottom: 10%;
+}
+/*3 lines below are to force the nav-pills font to white*/
+a{
+  color: white;
+}
+body {
+  background-color: black;
+  font-family: Lato;
+  color: white;
+}
+h1 {
+  padding: 0;
+  font-size: 5.0em;
+  margin-top:0px;
+}
+
+.btn-default{
+  background-color: black;
+  border: none;
+  /*border-color: black;*/
+  color: #0066FF;
+  font-size: 1.7em;
+}
+
+.pageOne{
+  background: url("https://i.ytimg.com/vi/hxKVLOYCs5o/maxresdefault.jpg");
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+  /*margin-top: -20%;  this was causing the nav bar to not appear*/
+}
+.follow {
+
+}
+.follow-text {
+  line-height: 1.4;
+
+}
+.pageTwo{
+  background:url("https://farm6.staticflickr.com/5062/5647855669_3f144666c0_b.jpg");
+  background-size:cover;
+  height: auto;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.aboutMe {
+  margin: 0 15% 0 15%;
+}
+.text-left{
+  padding-left: 15px;
+}
+.smallBlock{
+  background-color: rgba(0, 0, 0, 0.6);
+  /* use rgba instead to apply opacity
+  opacity: .75;  */
+  padding: 10px 10px 10px 10px;
+  /*margin-top: 200px;*/
+  /*margin-bottom: 10px;*/
+  border-radius: 10px;
+  display:inline-block;
+ }
+.section {
+    padding: 15px;
+}
+.skillList {
+  font-size: 1.3em;
+}
+progress {
+  font-size: 1.5em;
+  width: 60%;
+  height: 25px;
+  border: 1px solid #4993d8;
+}
+progress::-webkit-progress-bar {
+    background: #001326;
+}
+progress::-webkit-progress-value {
+    background: #4993d8;
+}
+
+.pageThree{
+  background:url("http://www.ilikewallpaper.net/iphone-5s-wallpapers/download/26535/Globular-Cluster-Star-Formation-Region-iphone-5s-parallax-wallpaper-ilikewallpaper_com.jpg");
+  background-size:cover;
+  /*height: 800px;*/
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.pageFour{
+  background:url("http://www.joseramos.com/core/img/2015/12/The-Spirits-Return-1200x-1000x711.jpg");
+  background-size:cover;
+  /*height: 1000px;*/
+  padding-bottom: 5%;
+  padding-top: 5%;
+  }
+.paddingBTN{
+  /*padding-top: 25%;
+  pading-bottom: 25%;*/
+  width: 200px;
+  margin-bottom: 25px;
+}
+.footer{
+  background-color:black;
+}
+.footer p{
+  font-size: 15px;
+}
+.paddingTop{
+  padding-top:2%;
+  padding-bottom:2%;
+}
+</style>
+
+
+<script>
+//Inspiration from "Coding Tutorials 360" as well as "Mr Snow" on Youtube.
+
+window.onscroll = fadeNav;
+
+function fadeNav(){
+    var offset = getScrollXY();
+    offset[1] > 0 ? setNavOpacity("rgba(0, 0, 0, 1)") : setNavOpacity("rgba(0, 0, 0, 0.6)");
+    }
+function setNavOpacity(newOpacity){
+    var navBar = document.getElementById("header_bar");
+    navBar.style.background = newOpacity;
+    }
+function getScrollXY() {
+  var scrOfX = 0, scrOfY = 0;
+  if( typeof( window.pageYOffset ) == 'number' ) {
+    //Netscape compliant
+    scrOfY = window.pageYOffset;
+    scrOfX = window.pageXOffset;
+  } else if( document.body && ( document.body.scrollLeft || document.body.scrollTop ) ) {
+    //DOM compliant
+    scrOfY = document.body.scrollTop;
+    scrOfX = document.body.scrollLeft;
+  } else if( document.documentElement && ( document.documentElement.scrollLeft || document.documentElement.scrollTop ) ) {
+    //IE6 standards compliant mode
+    scrOfY = document.documentElement.scrollTop;
+    scrOfX = document.documentElement.scrollLeft;
+  }
+  return [ scrOfX, scrOfY ];
+}
+</script>
+
+
+</html>
