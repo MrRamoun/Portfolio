@@ -106,33 +106,51 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <a href="https://github.com/PolarisTLX/Shopping-Cart-MongoDB-and-Node" target="blank"><img src="Shopping Cart Thumbnail.jpg" height="300"/></a>
+          <thumbnail>
+            <a class="thumb" href="https://github.com/PolarisTLX/Shopping-Cart-MongoDB-and-Node" target="blank"><img src="Shopping Cart Thumbnail.jpg" height="300"/></a>
+            <thumbcaption><div>Click to View</div></thumbcaption>
+          </thumbnail>
           <a href="https://github.com/PolarisTLX/Shopping-Cart-MongoDB-and-Node" target="blank"><h2>Shopping Cart - MongoDB/Node/Express/Passport/Stripe</h2></a>
        </div>
         <div class="col-md-6">
+          <thumbnail>
           <a href="https://polaristlx.github.io/Brick-Breaker-Game/" target="blank"><img src="Brick Breaker Thumbnail.jpg" width="400"/></a>
+          <thumbcaption><div>Click to View</div></thumbcaption>
+        </thumbnail>
           <a href="https://polaristlx.github.io/Brick-Breaker-Game/" target="blank"><h2>Brick Breaker Game</h2></a>
        </div>
     </div>
     <br/><br/>
       <div class="row">
         <div class="col-md-6">
+          <thumbnail>
           <a href="https://polaristlx.github.io/Javascript-War-Card-Game/" target="blank"><img src="War Card Game Thumbnail.jpg" height="300"/></a>
+          <thumbcaption><div>Click to View</div></thumbcaption>
+        </thumbnail>
           <a href="https://polaristlx.github.io/Javascript-War-Card-Game/" target="blank"><h2>Card Game "War"</h2></a>
         </div>
       <div class="col-md-6">
-        <a href="https://polaristlx.github.io/Tic-Tac-Toe/" target="blank"><img src="Tic-Tac-Toe Thumbnail.jpg" height="300"/></a>
+        <thumbnail>
+        <a href="https://polaristlx.github.io/Tic-Tac-Toe/" target="blank"><img src="Tic-Tac-Toe Thumbnail.jpg" width="400"/></a>
+        <thumbcaption><div>Click to View</div></thumbcaption>
+      </thumbnail>
         <a href="https://polaristlx.github.io/Tic-Tac-Toe/" target="blank"><h2>Tic-Tac-Toe Game</h2></a><!--puts a clickable link after the thumbnail preview-->
-      </div><!--this "<p data-height="265..." until "embed/ei.js"></script>" is a link to my previous CodePen project-->
+      </div>
     </div>
     <br/><br/>
      <div class="row">
        <div class="col-md-6">
-         <a href="https://polaristlx.github.io/Calculator/" target="blank"><img src="Calculator Thumbnail.jpg" height="300"/></a>
+         <thumbnail>
+         <a href="https://polaristlx.github.io/Calculator/" target="blank"><img src="Calculator Thumbnail.jpg" width="400"/></a>
+         <thumbcaption><div>Click to View</div></thumbcaption>
+       </thumbnail>
          <a href="https://polaristlx.github.io/Calculator/" target="blank"><h2>Functional Calculator</h2></a>
        </div>
       <div class="col-md-6">
+        <thumbnail>
         <a href="https://polaristlx.github.io/Pomodoro-Clock/" target="blank"><img src="Pomodoro Thumbnail.jpg" height="300"/></a>
+        <thumbcaption><div>Click to View</div></thumbcaption>
+      </thumbnail>
         <a href="https://polaristlx.github.io/Pomodoro-Clock/" target="blank"><h2>Pomodoro Clock</h2></a><!--puts a clickable link after the thumbnail preview-->
       </div><!--this "<p data-height="265..." until "embed/ei.js"></script>" is a link to my previous CodePen project-->
     </div>
@@ -295,6 +313,75 @@ progress::-webkit-progress-value {
 .portfolio {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+
+/*Adding hover animation to thumbnails*/
+thumbnail{
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px #ddd;
+  margin: 1em;
+}
+thumbcaption{
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+thumbcaption div{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  color: #2c3e50;
+  text-transform: uppercase;
+}
+thumbcaption div:after{
+  position: absolute;
+  content: "";
+  left: 0; right: 0;
+  bottom: 40%;
+  text-align: center;
+  margin: auto;
+  width: 0%;
+  height: 2px;
+  background: #2c3e50;
+}
+/*zoom in the thumbnail on hover:
+need both so that zoom is smooth in both directions*/
+thumbnail img{
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+thumbnail:hover img{
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}
+
+thumbnail:hover thumbcaption {
+  background: rgba(255, 255, 255, 0.3);
+}
+thumbcaption:hover div{
+  opacity: 1;
+  top: 0;
+}
+/*create a horizontal live below the caption*/
+thumbcaption:hover div:after{
+  width: 50%;
 }
 
 .pageFour{
