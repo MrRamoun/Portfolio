@@ -91,7 +91,10 @@
           <br/>
           <p class="skillList text-center">Front End Developer Certificate:</p>
           <a href="https://www.freecodecamp.org/polaristlx/front-end-certification">
+            <certifthumbnail>
             <img class="certificate" src="FCC Front End Certificate.jpg"/>
+            <thumbcaption><div>Click to View</div></thumbcaption>
+          </certifthumbnail>
           </a>
    </div>
 
@@ -291,10 +294,10 @@ progress::-webkit-progress-value {
 
 .certificate {
   height: 300px;
-  margin: auto;
+  /*margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center*/
 }
 
 .pageThree{
@@ -317,6 +320,20 @@ progress::-webkit-progress-value {
 
 
 /*Adding hover animation to thumbnails*/
+/*certificate*/
+certifthumbnail{
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+/*regular thumbnails*/
 thumbnail{
   width: 400px;
   height: 300px;
@@ -361,6 +378,21 @@ thumbcaption div:after{
 }
 /*zoom in the thumbnail on hover:
 need both so that zoom is smooth in both directions*/
+/*certificate*/
+certifthumbnail img{
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+certifthumbnail:hover img{
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}
+certifthumbnail:hover thumbcaption {
+  background: rgba(255, 255, 255, 0.3);
+}
+/*regular thumbnails*/
 thumbnail img{
   -webkit-transition: all 0.5s linear;
           transition: all 0.5s linear;
@@ -371,7 +403,6 @@ thumbnail:hover img{
   -webkit-transform: scale3d(1.2, 1.2, 1);
           transform: scale3d(1.2, 1.2, 1);
 }
-
 thumbnail:hover thumbcaption {
   background: rgba(255, 255, 255, 0.3);
 }
@@ -383,6 +414,7 @@ thumbcaption:hover div{
 thumbcaption:hover div:after{
   width: 50%;
 }
+
 
 .pageFour{
   background:url("http://www.joseramos.com/core/img/2015/12/The-Spirits-Return-1200x-1000x711.jpg");
