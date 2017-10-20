@@ -4,12 +4,13 @@
     <meta charset="utf-8">
 
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-
+  <!-- not sure if "type="text/css" is important-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
 
 </head>
 <body>
@@ -61,35 +62,30 @@
 
     <br/>
 
-
       <!-- My Skills section start -->
           <div class="section text-center">
               <h2 class="smallBlock codingSkills text-center">Coding Skills</h2> <br/>
 
-              <!-- <img class="align-left slide-in" src="Brick Breaker Thumbnail.jpg" width="400"/> -->
-
-              <!-- <div class="totop"> -->
                <p class="skillList">
                   HTML5 / CSS3 <br />
-                  <progress class="align-left slide-in" min="0" max="100" value="75"></progress></br>
+                  <progress class="skill" min="0" max="100" value="75"></progress></br>
                   <!-- CSS3 <br />
                   <progress  class="skill" min="0" max="100" value="60"></progress></br> -->
                   JavaScript / ES6 / jQuery <br />
-                  <progress class="align-left slide-in" min="0" max="100" value="65"></progress></br>
+                  <progress class="skill" min="0" max="100" value="65"></progress></br>
                   React / Webpack <br />
-                  <progress class="align-left slide-in" min="0" max="100" value="20"></progress></br>
+                  <progress class="skill" min="0" max="100" value="20"></progress></br>
                   MongoDB / Mongoose.js <br />
-                  <progress class="align-left slide-in" min="0" max="100" value="20"></progress></br>
+                  <progress class="skill" min="0" max="100" value="20"></progress></br>
                   Node.js / Express.js <br />
-                  <progress class="align-left slide-in" min="0" max="100" value="25"></progress></br>
+                  <progress class="skill" min="0" max="100" value="25"></progress></br>
                   Passport.js / Stripe.js <br />
-                  <progress class="align-left slide-in" min="0" max="100" value="12"></progress></br>
+                  <progress class="skill" min="0" max="100" value="12"></progress></br>
                   SQL <br />
-                  <progress class="align-left slide-in" min="0" max="100" value="15"></progress></br>
+                  <progress class="skill" min="0" max="100" value="15"></progress></br>
                   Python <br />
-                  <progress class="align-left slide-in" min="0" max="100" value="25"></progress></br>
+                  <progress class="skill" min="0" max="100" value="25"></progress></br>
                </p>
-             <!-- </div> -->
           </div>
           <!-- My Skills section end -->
           <br/>
@@ -208,14 +204,9 @@
 }
 
 .nav-pills{
-  transition:all .75s;
-  font-size: 2em;
+  font-size: 1.7em;
   background-color: black;
   margin-bottom: 10%;
-}
-.scrolledNav {
-  transition:all .75s;
-  font-size: 1.7em;
 }
 /*3 lines below are to force the nav-pills font to white*/
 a{
@@ -300,31 +291,6 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     background: #4993d8;
 }
-
-
-
-/*make skill bars slide in animation:*/
-.slide-in {
-  opacity:0;
-  transition:all .75s;
-}
-.align-left.slide-in {
-  transform:translateX(-50%) scale(0.75);
-}
-.slide-in.active {
-  opacity:1;
-  transform:translateX(0%) scale(1);
-}
-/*.skillList:hover progress {
-  opacity:1;
-  transform: translateX(0%) scale(1);
-}*/
-/*end skill bar slide-in animation*/
-
-
-
-
-
 
 .certificate {
   height: 300px;
@@ -473,44 +439,39 @@ thumbcaption:hover div:after{
   padding-top:2%;
   padding-bottom:2%;
 }
-
-
 </style>
 
 
 <script>
+//Inspiration from "Coding Tutorials 360" as well as "Mr Snow" on Youtube.
+
+window.onscroll = fadeNav;
 
 function fadeNav(){
-  var navBar = document.getElementById("header_bar");
-
-  if (window.scrollY > 0 ) {
-    navBar.style.background = "rgba(0, 0, 0, 1)";
-    navBar.classList.add('scrolledNav');
-  } else {
-    navBar.style.background = "rgba(0, 0, 0, 0.6)";
-    navBar.classList.remove('scrolledNav');
-  }
-}
-window.addEventListener('scroll', fadeNav);
-
-
-//skill bar slide in animation/
-// console.log(window.scrollY);
-const sliderImages = document.querySelectorAll('.slide-in');
-
-function checkSlide() {
-  sliderImages.forEach(sliderImage => {
-
-    if (window.scrollY > 600 && window.scrollY < 1300) {
-      sliderImage.classList.add('active');
-    } else {
-      sliderImage.classList.remove('active');
+    var offset = getScrollXY();
+    offset[1] > 0 ? setNavOpacity("rgba(0, 0, 0, 1)") : setNavOpacity("rgba(0, 0, 0, 0.6)");
     }
-  });
+function setNavOpacity(newOpacity){
+    var navBar = document.getElementById("header_bar");
+    navBar.style.background = newOpacity;
+    }
+function getScrollXY() {
+  var scrOfX = 0, scrOfY = 0;
+  if( typeof( window.pageYOffset ) == 'number' ) {
+    //Netscape compliant
+    scrOfY = window.pageYOffset;
+    scrOfX = window.pageXOffset;
+  } else if( document.body && ( document.body.scrollLeft || document.body.scrollTop ) ) {
+    //DOM compliant
+    scrOfY = document.body.scrollTop;
+    scrOfX = document.body.scrollLeft;
+  } else if( document.documentElement && ( document.documentElement.scrollLeft || document.documentElement.scrollTop ) ) {
+    //IE6 standards compliant mode
+    scrOfY = document.documentElement.scrollTop;
+    scrOfX = document.documentElement.scrollLeft;
+  }
+  return [ scrOfX, scrOfY ];
 }
-window.addEventListener('scroll', checkSlide);
-//end skill bar slide in animation/
-
 </script>
 
 
