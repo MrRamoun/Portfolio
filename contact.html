@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- this is required for Bootstrap 4 to function -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/633928b438.js"></script>
+  </head>
+  <body>
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-8 jumbotron">
+      <form action="mailto:paul.a.rail@gmail.com" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="fname">Your Full Name / Company Name</label>
+          <input type="text" class="form-control" id="fname" name="fname"/>
+        </div>
+        <div class="form-group">
+          <label for="femail">Your E-mail Address</label>
+          <input type="email" class="form-control" id="femail" name="femail"/>
+        </div>
+        <div class="form-group">
+          <label for="Message">Your Message</label>
+          <textarea rows="8" class="form-control"  id="message" name="message"></textarea>
+        </div>
+        <input type="submit" value="Send Message" class="btn btn-primary">
+
+      </form>
+    </div>
+
+    <div class="col-md-4">  My Contact Info
+      <ul class="list-group">
+        <li class="list-group-item"><i class="fa fa-phone-square" aria-hidden="true"></i> &nbsp; 1-647-828-9967</li>
+        <li class="list-group-item"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; paul.a.rail@gmail.com</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- these 3 are required just before the </body>  for Bootstrap 4 to function -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
