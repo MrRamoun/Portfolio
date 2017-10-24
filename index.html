@@ -3,25 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Paul Rail Portfolio Page</title>
-
-    <!-- Chrome Tab logo!  called Favicon -->
+    <!-- Chrome Tab logo / favicon -->
     <link rel="icon" type="image/jpg" href="blue rings favicon.jpg">
 
 
-  <!-- Google Fonts: -->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <!-- Google Fonts: -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 
-  <!-- Old Bootstrap 3: (original build that is working)-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- New Bootstrap 4: (need debuging) -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <!-- Old Bootstrap 3: (original build that is working)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- New Bootstrap 4: (need debuging) -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
 
-  <!-- Font Awesome: -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome: -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
 </head>
 <body>
@@ -58,7 +57,7 @@
     </div>
     <br/>
     <div class="follow">
-      <h3 class="smallBlock aboutMe text-center follow-text">Observe my dedication to learning EVERY DAY <br/> by following my progress on Twitter with #100DaysOfCode <br/> or my activity on GitHub!</h3>
+      <h3 class="smallBlock aboutMe text-center follow-text">New site design with Bootstrap 4 coming shortly! <br/><br/> Observe my dedication to learning EVERY DAY <br/> by following my progress on Twitter with #100DaysOfCode <br/> or my activity on GitHub!</h3>
     </div>
   </div>
 
@@ -263,7 +262,7 @@ h1 {
 .pageOne{
   background: url("https://i.ytimg.com/vi/hxKVLOYCs5o/maxresdefault.jpg");
   background-size: cover;
-  height: 650px;
+  height: 700px;
   width: 100%;
   /*margin-top: -20%;  this was causing the nav bar to not appear*/
 }
@@ -521,7 +520,7 @@ const sliderImages = document.querySelectorAll('.slide-in');
 function checkSlide() {
   sliderImages.forEach(sliderImage => {
 
-    if (window.scrollY > 600 && window.scrollY < 1300) {
+    if (window.scrollY > 650 && window.scrollY < 1300) {
       sliderImage.classList.add('active');
     } else {
       sliderImage.classList.remove('active');
