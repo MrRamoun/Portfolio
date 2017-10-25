@@ -261,11 +261,10 @@ h1 {
 
 .pageOne{
   background: url("images/Polaris Photo.jpg");
-  /*this makes background stay in place and will not scroll when the user scrolls*/
+  /*this makes background stay in place and will not scroll when the user scrolls
+  and will also keep the background the same size despite screen size or zooming*/
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  /*this keeps the size of the background the same despite screen size or zooming*/
+  background-repeat: no-repeat;  
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -273,7 +272,7 @@ h1 {
 
 
   /*background-size: cover;*/
-  height: 800px;
+  height: 750px;
   width: 100%;
   /*margin-top: -20%;  this was causing the nav bar to not appear*/
 }
@@ -284,7 +283,12 @@ h1 {
 
 .pageTwo{
   background:url("images/Nebula Photo.jpg");
-  background-size:cover;
+  /*this keeps the size of the background the same despite screen size or zooming*/
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   /*The 2 lines below are to control the background image opacity:*/
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color;
