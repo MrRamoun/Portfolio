@@ -1,0 +1,49 @@
+/*
+RESPONSICE CSS FOR SMALLER SCREEN SIZES USING "COSTUM MEDIA QUERIES"
+
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+add class="img-responsive" in the HTML to things like images
+*/
+
+
+/* for small devices: phones */
+@media only screen and (max-width: 767px) {
+
+  .navbar-default {
+    background-color: #000000 !important;
+    /*use !important to force it in case Bootstrap conflics with this somehow*/
+    border-color: #e6e6e6;
+
+  }
+  .about-iphone img {
+    width: 100%;
+  }
+  .purchase-now .col-md-3 {
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+
+/* for small tablets */
+@media only screen and (max-width: 768px) {
+  .header-iphone {
+    display: none;
+  }
+  .header-text, .header-btns {
+    text-align: center;    
+    padding-bottom: 50px;
+  }
+}
+
+
+/*These sections were not needed for this and likely will rarely be used but good to list here for future use:*/
+/* medium devices: desktops */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* large devices: wide screens / 4K screens */
+@media only screen and (min-width: 1200px) {
+
+}

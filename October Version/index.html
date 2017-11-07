@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109338674-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109338674-1');
+      </script>
+
+
+    <meta charset="utf-8">
+    <title>Paul Rail Portfolio Page</title>
+    <!-- Chrome Tab logo / favicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="blue rings favicon.ico"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+    <!-- Google Fonts: -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+    <!-- Old Bootstrap 3: (original build that is working)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- New Bootstrap 4: (need debuging) -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+
+    <!-- Font Awesome: -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+  <div class="pageOne text-center" id="page1">
+  <ul class ="nav nav-pills navbar-fixed-top" id="header_bar">
+       <li>      <a href="#page1">Polaris Coding</a> </li>
+        <!--# is normaly replaced by a link-->
+    <!--in this case we put #page2 or #page3 (which are the id's we gave those sections) so that cliking on these will make the page jump to those sections-->
+      <li class="pull-right">      <a href="#page4">Contact Me</a>    </li>
+      <li class="pull-right">      <a href="#page3">Portfolio</a>    </li>
+      <li class="pull-right">      <a href="#page2">About Me</a>    </li>
+
+    </ul>
+  <!--</div> this was used for the container-->
+  <div class="block text-center">
+    <h1>Polaris Coding</h1>
+    <h3>Always Learning. &nbsp Always Evolving. &nbsp Always Agile.</h3>
+  <!--  &nbsp (non-breaking space) is used to force a space   -->
+    </div>
+    <br/><br/>
+
+
+    <div class="btnList text-center">
+      <a class="btn btn-default paddingBTN" href="https://github.com/PolarisTLX" target="blank"><i class="fa fa-github" id="githubIcon"></i> GitHub</a>
+      <a class="btn btn-default paddingBTN" href="https://twitter.com/PolarisTLX" target="blank"><i class="fa fa-twitter" id="codepenIcon"></i> Twitter</a>
+      <a class="btn btn-default paddingBTN" href="https://www.linkedin.com/in/paul-rail-33345518/" target="blank"><i class="fa fa-linkedin" id="linkedinIcon"></i> LinkedIn</a>
+      <a class="btn btn-default paddingBTN" href="https://stackoverflow.com/users/7823083/polaristlx?tab=profile" target="blank"><i class="fa fa-stack-overflow" id="stackIcon"></i> Stack Overflow</a>
+      <a class="btn btn-default paddingBTN" href="https://codepen.io/PolarisTLX/" target="blank"><i class="fa fa-codepen" id="codepenIcon"></i> CodePen</a>
+
+      <!--id="linkedinIcon" is to be able to style this icon's color in the CSS portion. aria-hidden="true" dont know why it is there-->
+  <!-- link that has been styled to look like buttons-->
+    </div>
+    <br/>
+    <div>
+      <h3 class="smallBlock aboutMe text-center headline">New site design with Bootstrap 4 coming shortly! <br/><br/> Observe my dedication to learning EVERY DAY <br/> by following my progress on Twitter with #100DaysOfCode <br/> or my activity on GitHub!</h3>
+    </div>
+  </div>
+
+  <div class="pageTwo" id="page2">
+    <!--we give id's, like "page2" here to use in the buttons above to jump to these sections respectively-->
+    <div class="aboutMe smallBlock">
+     <h1 class="text-center">About Me</h1>
+     <br/>
+      <h3 class="text-left">My name is Paul Rail. I'm a self taught full-stack developer based in Toronto, Canada with previous industry experience in engineering and finance.</h3>
+      <h3 class="text-left">I am passionate about being at the forefront of where the world is heading with programming and using technology to solve real world problems.</h3>
+    </div>
+
+    <br/>
+
+
+      <!-- My Skills section start -->
+          <div class="section text-center">
+              <h2 class="smallBlock codingSkills text-center">Coding Skills</h2> <br/>
+
+              <!-- <img class="align-left slide-in" src="Brick Breaker Thumbnail.jpg" width="400"/> -->
+
+              <!-- <div class="totop"> -->
+               <p class="skillList">
+                  HTML5 / CSS3 / Bootstrap<br />
+                  <progress class="align-left slide-in" min="0" max="100" value="78"></progress></br>
+                  <!-- CSS3 <br />
+                  <progress  class="skill" min="0" max="100" value="60"></progress></br> -->
+                  JavaScript / ES6 / jQuery <br />
+                  <progress class="align-left slide-in" min="0" max="100" value="68"></progress></br>
+                  React / Webpack / Babel <br />
+                  <progress class="align-left slide-in" min="0" max="100" value="30"></progress></br>
+                  Angular / TypeScript <br />
+                  <progress class="align-left slide-in" min="0" max="100" value="10"></progress></br>
+                  Node.js / Express.js <br />
+                  <progress class="align-left slide-in" min="0" max="100" value="30"></progress></br>
+                  MongoDB / Mongoose.js <br />
+                  <progress class="align-left slide-in" min="0" max="100" value="20"></progress></br>
+                  Passport.js / Stripe.js <br />
+                  <progress class="align-left slide-in" min="0" max="100" value="10"></progress></br>
+                  SQL <br />
+                  <progress class="align-left slide-in" min="0" max="100" value="15"></progress></br>
+                  Python <br />
+                  <progress class="align-left slide-in" min="0" max="100" value="25"></progress></br>
+               </p>
+             <!-- </div> -->
+          </div>
+          <!-- My Skills section end -->
+          <br/>
+          <p class="skillList text-center">Front End Developer Certificate:</p>
+          <a href="https://www.freecodecamp.org/polaristlx/front-end-certification" target="blank">
+            <certifthumbnail>
+            <img class="certificate" src="FCC Front End Certificate.jpg"/>
+            <thumbcaption><div>Click to View</div></thumbcaption>
+          </certifthumbnail>
+          </a>
+   </div>
+
+  <div class ="pageThree text-center" id="page3">
+    <div class="smallBlock portfolio paddingTop">
+      <h1>Portfolio</h1>
+      <br/>
+      <h2>Examples of my latest work</h2>
+    </div>
+    <br/><br/><br/><br/>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <thumbnail>
+            <a class="thumb" href="https://github.com/PolarisTLX/Shopping-Cart-MongoDB-and-Node" target="blank"><img src="Shopping Cart Thumbnail.jpg" height="300"/>
+            <thumbcaption><div>Click to View</div></thumbcaption></a>
+          </thumbnail>
+          <a href="https://github.com/PolarisTLX/Shopping-Cart-MongoDB-and-Node" target="blank"><h2>Shopping Cart - MongoDB/Node/Express/Passport/Stripe</h2></a>
+       </div>
+        <div class="col-md-6">
+          <thumbnail>
+          <a href="https://polaristlx.github.io/Brick-Breaker-Game/" target="blank"><img src="Brick Breaker Thumbnail.jpg" width="400"/>
+          <thumbcaption><div>Click to View</div></thumbcaption></a>
+        </thumbnail>
+          <a href="https://polaristlx.github.io/Brick-Breaker-Game/" target="blank"><h2>Brick Breaker Game</h2></a>
+       </div>
+    </div>
+    <br/><br/>
+      <div class="row">
+        <div class="col-md-6">
+          <thumbnail>
+          <a href="https://polaristlx.github.io/Javascript-War-Card-Game/" target="blank"><img src="War Card Game Thumbnail.jpg" height="300"/>
+          <thumbcaption><div>Click to View</div></thumbcaption></a>
+        </thumbnail>
+          <a href="https://polaristlx.github.io/Javascript-War-Card-Game/" target="blank"><h2>Card Game "War"</h2></a>
+        </div>
+      <div class="col-md-6">
+        <thumbnail>
+        <a href="https://polaristlx.github.io/Tic-Tac-Toe/" target="blank"><img src="Tic-Tac-Toe Thumbnail.jpg" width="400"/>
+        <thumbcaption><div>Click to View</div></thumbcaption></a>
+      </thumbnail>
+        <a href="https://polaristlx.github.io/Tic-Tac-Toe/" target="blank"><h2>Tic-Tac-Toe Game</h2></a><!--puts a clickable link after the thumbnail preview-->
+      </div>
+    </div>
+    <br/><br/>
+     <div class="row">
+       <div class="col-md-6">
+         <thumbnail>
+         <a href="https://polaristlx.github.io/Calculator/" target="blank"><img src="Calculator Thumbnail.jpg" width="400"/>
+         <thumbcaption><div>Click to View</div></thumbcaption></a>
+       </thumbnail>
+         <a href="https://polaristlx.github.io/Calculator/" target="blank"><h2>Functional Calculator</h2></a>
+       </div>
+      <div class="col-md-6">
+        <thumbnail>
+        <a href="https://polaristlx.github.io/Pomodoro-Clock/" target="blank"><img src="Pomodoro Thumbnail.jpg" height="300"/>
+        <thumbcaption><div>Click to View</div></thumbcaption></a>
+      </thumbnail>
+        <a href="https://polaristlx.github.io/Pomodoro-Clock/" target="blank"><h2>Pomodoro Clock</h2></a><!--puts a clickable link after the thumbnail preview-->
+      </div><!--this "<p data-height="265..." until "embed/ei.js"></script>" is a link to my previous CodePen project-->
+    </div>
+    <br/>
+    </div>
+  </div>
+
+
+  <div class="pageFour text-center" id="page4">
+<h1 class="smallBlock">Contact Me  </h1>
+    <br/><br/><br/>
+
+        <a class="btn btn-default paddingBTN" href="https://form.jotform.com/72948147485268" target="blank"><i class="fa fa-envelope" id="emailIcon"></i> Email</a>
+        <a class="btn btn-default paddingBTN" href="https://www.linkedin.com/in/paul-rail-33345518/" target="blank"><i class="fa fa-linkedin" id="linkedinIcon"></i> LinkedIn</a>
+        <a class="btn btn-default paddingBTN" href="https://twitter.com/PolarisTLX" target="blank"><i class="fa fa-twitter" id="twitterIcon"></i> Twitter</a>
+        <a class="btn btn-default paddingBTN" href="https://github.com/PolarisTLX" target="blank"><i class="fa fa-github" id="githubIcon"></i> GitHub</a>
+        <a class="btn btn-default paddingBTN" href="https://stackoverflow.com/users/7823083/polaristlx?tab=profile" target="blank"><i class="fa fa-stack-overflow" id="stackIcon"></i> Stack Overflow</a>
+        <!-- <a class="btn btn-default paddingBTN" href="https://codepen.io/PolarisTLX/" target="blank"><i class="fa fa-codepen" id="codepenIcon"></i> CodePen</a> -->
+      </div>
+
+
+    <div class="footer text-center">
+
+      <p>Copyright @ Paul Rail, Polaris Coding 2017. All Rights Reserved.</p>
+    </div>
+
+    <!-- Many Bootstrap components require the use of JavaScript to function. Specifically, they require jQuery, Popper.js, and our own JavaScript plugins. Place the following <script>s near the end of your pages, right before the closing </body> tag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- Bootstrap uses jQuery’s slim build, but the full version is also supported. -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+
+
+<style>
+.block{
+  background-color: rgba(0, 0, 0, 0.6);
+  /* use rgba instead to apply opacity
+  opacity: .75;  */
+  padding: 10px 40px 5px 40px;
+  margin-top: 180px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display:inline-block;
+ }
+#header_bar {
+  background: rgba(0, 0, 0, 0.6);
+  /*height: 55px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10020;
+  display: inline;*/
+}
+
+.nav-pills{
+  transition:all .75s;
+  font-size: 2.2em;
+  background-color: black;
+  margin-bottom: 10%;
+}
+.scrolledNav {
+  transition:all .75s;
+  font-size: 1.7em;
+}
+/*3 lines below are to force the nav-pills font to white*/
+a{
+  color: white;
+}
+body {
+  background-color: black;
+  font-family: Lato;
+  color: white;
+}
+h1 {
+  padding: 0;
+  font-size: 5.0em;
+  margin-top:0px;
+}
+
+.btn-default{
+  background-color: black;
+  border: none;
+  /*border-color: black;*/
+  color: #0066FF;
+  font-size: 1.7em;
+}
+
+.pageOne{
+  background: url("images/Polaris Photo.jpg");
+  /*this makes background stay in place and will not scroll when the user scrolls
+  and will also keep the background the same size despite screen size or zooming*/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+
+
+  /*background-size: cover;*/
+  height: 750px;
+  width: 100%;
+  /*margin-top: -20%;  this was causing the nav bar to not appear*/
+}
+
+.headline {
+  line-height: 1.4;
+}
+
+.pageTwo{
+  background:url("images/Nebula Photo.jpg");
+  /*this keeps the size of the background the same despite screen size or zooming*/
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  /*The 2 lines below are to control the background image opacity:*/
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+
+  height: auto;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.aboutMe {
+  margin: 0 15% 0 15%;
+}
+.text-left{
+  padding-left: 15px;
+}
+.smallBlock{
+  background-color: rgba(0, 0, 0, 0.6);
+  /* use rgba instead to apply opacity
+  opacity: .75;  */
+  padding: 10px 10px 10px 10px;
+  /*margin-top: 200px;*/
+  /*margin-bottom: 10px;*/
+  border-radius: 10px;
+  display:inline-block;
+ }
+.section {
+    padding: 15px;
+}
+.skillList {
+  font-size: 1.3em;
+}
+progress {
+  font-size: 1.5em;
+  width: 60%;
+  height: 25px;
+  border: 1px solid #4993d8;
+}
+progress::-webkit-progress-bar {
+    background: #001326;
+}
+progress::-webkit-progress-value {
+    background: #4993d8;
+}
+
+
+
+/*make skill bars slide in animation:*/
+.slide-in {
+  opacity:0;
+  transition:all .75s;
+}
+.align-left.slide-in {
+  transform:translateX(-50%) scale(0.75);
+}
+.slide-in.active {
+  opacity:1;
+  transform:translateX(0%) scale(1);
+}
+/*.skillList:hover progress {
+  opacity:1;
+  transform: translateX(0%) scale(1);
+}*/
+/*end skill bar slide-in animation*/
+
+
+
+
+
+
+.certificate {
+  height: 300px;
+  /*margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center*/
+}
+
+.pageThree{
+  background:url("images/Grey Space Photo.jpg");
+  /*this makes background stay in place and will not scroll when the user scrolls*/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /*this keeps the size of the background the same despite screen size or zooming*/
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+
+  /*background-size:cover;
+  background-position: center;*/
+  /*The 2 lines below are to control the background image opacity:
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;*/
+
+  /*height: 800px;*/
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.portfolio {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+/*Adding hover animation to thumbnails*/
+/*certificate*/
+certifthumbnail{
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+/*regular thumbnails*/
+thumbnail{
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px #ddd;
+  margin: 1em;
+}
+thumbcaption{
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+thumbcaption div{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  color: #2c3e50;
+  text-transform: uppercase;
+}
+thumbcaption div:after{
+  position: absolute;
+  content: "";
+  left: 0; right: 0;
+  bottom: 40%;
+  text-align: center;
+  margin: auto;
+  width: 0%;
+  height: 2px;
+  background: #2c3e50;
+}
+/*zoom in the thumbnail on hover:
+need both so that zoom is smooth in both directions*/
+/*certificate*/
+certifthumbnail img{
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+certifthumbnail:hover img{
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}
+certifthumbnail:hover thumbcaption {
+  background: rgba(255, 255, 255, 0.3);
+}
+/*regular thumbnails*/
+thumbnail img{
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+thumbnail:hover img{
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}
+thumbnail:hover thumbcaption {
+  background: rgba(255, 255, 255, 0.3);
+}
+thumbcaption:hover div{
+  opacity: 1;
+  top: 0;
+}
+/*create a horizontal live below the caption*/
+thumbcaption:hover div:after{
+  width: 50%;
+}
+
+
+.pageFour{
+  background-image: url("images//Aurora Photo.jpg");
+  /*background:url("http://www.joseramos.com/core/img/2015/12/The-Spirits-Return-1200x-1000x711.jpg");*/
+  background-size:cover;
+  /*height: 1000px;*/
+  padding-bottom: 5%;
+  padding-top: 5%;
+  }
+.paddingBTN{
+  /*padding-top: 25%;
+  pading-bottom: 25%;*/
+  width: 200px;
+  margin-bottom: 25px;
+}
+.footer{
+  background-color:black;
+}
+.footer p{
+  font-size: 15px;
+}
+.paddingTop{
+  padding-top:2%;
+  padding-bottom:2%;
+}
+
+
+</style>
+
+
+<script>
+
+function fadeNav(){
+  var navBar = document.getElementById("header_bar");
+
+  if (window.scrollY > 0 ) {
+    navBar.style.background = "rgba(0, 0, 0, 1)";
+    navBar.classList.add('scrolledNav');
+  } else {
+    navBar.style.background = "rgba(0, 0, 0, 0.6)";
+    navBar.classList.remove('scrolledNav');
+  }
+}
+window.addEventListener('scroll', fadeNav);
+
+
+//skill bar slide in animation/
+// console.log(window.scrollY);
+const sliderImages = document.querySelectorAll('.slide-in');
+
+function checkSlide() {
+  sliderImages.forEach(sliderImage => {
+
+    if (window.scrollY > 650 && window.scrollY < 1300) {
+      sliderImage.classList.add('active');
+    } else {
+      sliderImage.classList.remove('active');
+    }
+  });
+}
+window.addEventListener('scroll', checkSlide);
+//end skill bar slide in animation/
+
+</script>
+
+
+</html>

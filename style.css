@@ -1,82 +1,283 @@
-.block{
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;  /* matched to HTML link as per Google Fonts site */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: white;
+}
+p {
+  font-size: 14px;
+  color: white;
+}
+
+
+/*GENERAL SECTION:*/
+.section-title {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+.section-title h2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/*adding an underline below the Section title*/
+/*.section-title h2:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  background-color: #4993d8;
+  margin-left: -20px
+}*/
+
+.section-title p {
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 45px;
+}
+
+
+/*NAVBAR*/
+/*.navbar-default {*/
+nav.navbar {
+  /*background-color: rgba(0,0,0, 0.25);*/
+  /*background-color: transparent;*/
+  border: 1px solid #444;
+  z-index: 110;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+/*hmaburger icon: toggler:*/
+.navbar-default .navbar-toggler {
+  color: white;
+  border-color:  white;
+/*background-color: black;*/
+}
+/*hamburger 3 lines color:*/
+.navbar-default .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+.bg-customize .navbar-nav .nav-link {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.bg-customize .navbar-nav .nav-link:hover {
+    color: #0066FF;
+}
+
+.bg-customize .navbar-nav .nav-link:focus {
+  color: white;
+}
+/*.navbar-brand {
+  padding: 9px 15px;
+}*/
+.navbar-brand img {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+/*below does not work?*/
+.bg-customize .navbar-nav > .active > a,
+.bg-customize .navbar-nav > .active > a:hover,
+.bg-customize .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #0066FF;
+}
+
+
+
+/*Header section*/
+.header {
+  background-image: url("images/Polaris Photo.jpg");
+  /*this makes background stay in place and will not scroll when the user scrolls*/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /*this keeps the size of the background the same despite screen size or zooming*/
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+/*this is just to reduce opacity of background images*/
+.header-overlay {
+  background-color: rgba(31,31,31,0.1);
+}
+
+/*.logo {
+  padding-bottom: 50px;
+}*/
+
+.headerBlock{
   background-color: rgba(0, 0, 0, 0.6);
   /* use rgba instead to apply opacity
   opacity: .75;  */
-  padding: 10px 40px 5px 40px;
-  margin-top: 180px;
+  padding: 10px 10px 5px 10px;
+  margin-top: 125px;
   margin-bottom: 10px;
   border-radius: 10px;
   display:inline-block;
  }
-#header_bar {
-  background: rgba(0, 0, 0, 0.6);
-  /*height: 55px;
-  position: fixed;
-  top: 0px;
+
+.header-text h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 300;
+  /*this is spacing between lines.  35px text with 45px line-height = 10px space between lines*/
+  line-height: 45px;
+  padding-top: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header-text p {
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  /*this is spacing between lines.  35px text with 45px line-height = 10px space between lines*/
+  line-height: 28px;
+  text-align: center;
+}
+.header-btns {
+  margin-top: 45px;
+  margin-bottom: 30px;
+  /*padding-bottom: 0px;*/
+  text-align: center;
+}
+
+.btn-download,
+.btn-download:focus,
+.btn-download:active,
+/*.btn-download:visited*/
+{
+  background: transparent;
+  /*border: 1px solid #0066FF !important;*/
+  padding: 10px 30px 10px 30px;
+  font-size: 19px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  /*this is for like hover effects?:*/
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+/*this was needed to force the border around the btn, perhaps there was a conflict*/
+.btn-download {
+  border: 1px solid  #0066FF !important;
+}
+
+.btn-download:hover {
+  background-color: #0066FF;
+  color: white;
+}
+
+.btn-tour,
+.btn-tour:focus,
+.btn-tour:active,
+/*.btn-tour:visited*/
+{
+  color: #A9ABB0;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 500;
+  background: transparent;
+  /*this is for like hover effects?:*/
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.btn-tour:hover {
+  background-color: #0066FF;
+  color: white;
+}
+
+/*.header-iphone img {
   width: 100%;
-  z-index: 10020;
-  display: inline;*/
-}
+}*/
 
-.nav-pills{
-  transition:all .75s;
-  font-size: 2.2em;
-  background-color: black;
-  margin-bottom: 10%;
-}
-.scrolledNav {
-  transition:all .75s;
-  font-size: 1.7em;
-}
-/*3 lines below are to force the nav-pills font to white*/
-a{
-  color: white;
-}
-body {
-  background-color: black;
-  font-family: Lato;
-  color: white;
-}
-h1 {
-  padding: 0;
-  font-size: 5.0em;
-  margin-top:0px;
-}
 
+
+/*Button links from old site*/
 .btn-default{
   background-color: black;
   border: none;
   /*border-color: black;*/
   color: #0066FF;
-  font-size: 1.7em;
+  /*font-size: 1.7em;*/
 }
-
-.pageOne{
-  background: url("images/Polaris Photo.jpg");
-  /*this makes background stay in place and will not scroll when the user scrolls
-  and will also keep the background the same size despite screen size or zooming*/
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-
-
-  /*background-size: cover;*/
-  height: 750px;
-  width: 100%;
-  /*margin-top: -20%;  this was causing the nav bar to not appear*/
+.paddingBTN{
+  /*padding-top: 25%;
+  pading-bottom: 25%;*/
+  /*width: 200px;*/
+  /*margin-bottom: 25px;*/
+  margin-top: 10px;
 }
-
 .headline {
   line-height: 1.4;
 }
 
-.pageTwo{
-  background:url("images/Nebula Photo.jpg");
-  /*this keeps the size of the background the same despite screen size or zooming*/
+/* COUNTERS (now in header section)*/
+
+.counter-item {
+  color: #0066FF;
+  font-size: 30px;
+}
+.counter-item h2 {
+  /*much nicer font for the numbers*/
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.counter-item p {
+  color: #0066FF;
+  font-size: 15px;
+  margin-top: 0px;
+  font-weight: 400;
+  /*text-transform: uppercase;*/
+  font-family: "Source Sans Pro", sans-serif;
+}
+.counter {
+  padding-bottom: 15px;
+}
+
+/*ABOUT ME SECTION:*/
+
+#ABOUT {
+  padding-top: 45px;
+  background-image: url("images/Nebula Photo.jpg");
+  /*this makes background stay in place and will not scroll when the user scrolls*/
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /*this keeps the size of the background the same despite screen size or zooming*/
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -84,33 +285,27 @@ h1 {
   /*The 2 lines below are to control the background image opacity:*/
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color;
-
-  height: auto;
-  width: 100%;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
+
 .aboutMe {
-  margin: 0 15% 0 15%;
+  /*margin: 0 15% 0 15%;*/
+  color: white;
 }
 .text-left{
   padding-left: 15px;
 }
+
 .smallBlock{
   background-color: rgba(0, 0, 0, 0.6);
-  /* use rgba instead to apply opacity
-  opacity: .75;  */
   padding: 10px 10px 10px 10px;
   /*margin-top: 200px;*/
   /*margin-bottom: 10px;*/
   border-radius: 10px;
   display:inline-block;
  }
-.section {
-    padding: 15px;
-}
 .skillList {
   font-size: 1.3em;
+  color: white;
 }
 progress {
   font-size: 1.5em;
@@ -125,31 +320,6 @@ progress::-webkit-progress-value {
     background: #4993d8;
 }
 
-
-
-/*make skill bars slide in animation:*/
-.slide-in {
-  opacity:0;
-  transition:all .75s;
-}
-.align-left.slide-in {
-  transform:translateX(-50%) scale(0.75);
-}
-.slide-in.active {
-  opacity:1;
-  transform:translateX(0%) scale(1);
-}
-/*.skillList:hover progress {
-  opacity:1;
-  transform: translateX(0%) scale(1);
-}*/
-/*end skill bar slide-in animation*/
-
-
-
-
-
-
 .certificate {
   height: 300px;
   /*margin: auto;
@@ -158,33 +328,124 @@ progress::-webkit-progress-value {
   justify-content: center*/
 }
 
-.pageThree{
-  background:url("images/Grey Space Photo.jpg");
-  /*this makes background stay in place and will not scroll when the user scrolls*/
+
+.choose-me-wrapper {
+  padding-top: 50px;
+}
+
+.choose-me-title {
+  padding-bottom: 50px;
+}
+
+.choose-me-title h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  position: relative;
+}
+/*adding an underline below the ABOUT ME*/
+/*.choose-me-title h2:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 70px;
+  height: 1px;
+  background-color: #0066FF;
+  margin-left: -20px
+}*/
+.choose-me-title p {
+  margin-top: 40px;
+  font-size: 19px;
+  line-height: 24px;
+}
+.choose-me-item {
+  position: relative;
+  padding-bottom: 4px;
+  padding-left: 80px;
+}
+/*to position the font-awesome icons:*/
+.choose-me-item div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 55px;
+  color: #0066FF;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.choose-me-item h3 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+}
+.choose-me-item p {
+  color: #e2dcdc;  /*off-white*/
+  font-size: 15px;
+}
+
+
+/*TESTOMONIALS / PORTFOLIO SECTION*/
+.portfolio {
+  background-image: url("images/Grey Space Photo.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  /*this keeps the size of the background the same despite screen size or zooming*/
   background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  -webkit-background-size: cover;
-
-  /*background-size:cover;
-  background-position: center;*/
-  /*The 2 lines below are to control the background image opacity:
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: color;*/
-
-  /*height: 800px;*/
-  padding-top: 5%;
-  padding-bottom: 5%;
+  /*this centers the image:*/
+  background-position: 50% 50%;
+}
+.portfolio-overlay {
+  background-color: rgba(31, 31, 31, 0.5);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    font-size: 100px;
+}
+.carousel-indicators {
+  /*push down the position indicator:*/
+  bottom: -10px;
+}
+/*make the images circles and add blue border*/
+/*.carousel-inner .carousel-item img {
+  border: 2px solid #0066FF;
+  border-radius: 50%;
+  padding: 3px;
+}*/
+.portfolio-caption {
+  padding-bottom: 70px;
+}
+.portfolio-caption h2 {
+  color: #0066FF;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.portfolio-caption h4 {
+  color: #0066FF;
+}
+.portfolio-caption h4 span {
+  color: wihte;
+  font-style: italic;
+  font-weight: 300;
+}
+.portfolio-caption p {
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding-top: 50px;
 }
 
-.portfolio {
-  padding-left: 5%;
-  padding-right: 5%;
-}
+
 
 
 /*Adding hover animation to thumbnails*/
@@ -203,14 +464,14 @@ certifthumbnail{
 }
 /*regular thumbnails*/
 thumbnail{
-  width: 400px;
-  height: 300px;
+  width: 275px;
+  height: 200px;
   overflow: hidden;
   position: relative;
   display: inline-block;
   vertical-align: top;
-  border: 5px solid #fff;
-  box-shadow: 0 0 5px #ddd;
+  /*border: 5px solid #fff;*/
+  /*box-shadow: 0 0 5px #ddd;*/
   margin: 1em;
 }
 thumbcaption{
@@ -218,7 +479,7 @@ thumbcaption{
   left: 0; right: 0;
   top: 0; bottom: 0;
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bold;
   width: 100%;
   height: 100%;
@@ -284,27 +545,145 @@ thumbcaption:hover div:after{
 }
 
 
-.pageFour{
+
+/*CONTACT US SECTION*/
+
+.contact-p {
+  margin-top: 25px !important;
+  margin-bottom: 10px !important;
+}
+
+.contact-me {
   background-image: url("images//Aurora Photo.jpg");
-  /*background:url("http://www.joseramos.com/core/img/2015/12/The-Spirits-Return-1200x-1000x711.jpg");*/
-  background-size:cover;
-  /*height: 1000px;*/
-  padding-bottom: 5%;
-  padding-top: 5%;
-  }
-.paddingBTN{
-  /*padding-top: 25%;
-  pading-bottom: 25%;*/
-  width: 200px;
-  margin-bottom: 25px;
+  /*this makes background stay in place and will not scroll when the user scrolls*/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /*this keeps the size of the background the same despite screen size or zooming*/
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
 }
-.footer{
-  background-color:black;
+
+
+.contact-me-form .form-control {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #555;
+  background-color: transparent;
+  border: 1px solid #aeaeae;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  outline: 0px !important;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
-.footer p{
+
+#message {
+  height: 117px;
+  resize: none;
+}
+.submit-btn,
+.submit-btn:active,
+.submit-btn:focus,
+/*.submit-btn:visited*/
+{
+  background-color: transparent;
+  border: 1px solid #0066FF;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #0066FF;
+  outline: 0px !important;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.submit-btn:hover {
+  background: #0066FF;
+  color: white;
+  border-color: #0066FF;
+}
+
+/*CONTACT SOCIAL ICONS*/
+.social-icons {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.social-icons ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.social-icons ul li {
+  /*removes the li bullet symbols: */
+  list-style: none;
+  /*this lines them up horizontally instead of one on top of the other:*/
+  display: inline;
+  padding-left: 10px;
+}
+.social-icons ul li a {
+  font-size: 25px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #9d9d9d;
+  border-radius: 3px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #9d9d9d;
+}
+.social-icons ul li a:hover {
+  background-color: #0066FF;
+  border: 1px solid #0066FF;
+  color: white;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+/*FOOTER SECTION*/
+.footer {
+  background-color: #1a1a1a;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  border-bottom: 3px solid #0066FF;
+}
+#copyright {
+  width: 50%;
+}
+#copyright p {
+  color: #8C8B8A;
+  font-weight: 400;
   font-size: 15px;
+  text-transform: uppercase;
 }
-.paddingTop{
-  padding-top:2%;
-  padding-bottom:2%;
+#copyright p a {
+  text-decoration: none;
+  color: #0066FF;
+}
+.scroll-top {
+  text-align: right;
+}
+/*.scroll-top a {
+  background-color: #0066FF;
+  padding: 25px;
+}*/
+.scroll-top a i {
+  color: #0066FF;
+  font-size: 50px;
+  padding-top: 10px;
 }
