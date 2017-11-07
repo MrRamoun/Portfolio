@@ -102,7 +102,7 @@ $(document).ready(function() {
       var height = $(this).outerHeight();
       // console.log(height);
       //get the y pixels of the top of current section - 70px:
-      var grttop = $(this).offset().top - 70;
+      var grttop = $(this).offset().top - 20;
       // console.log(grttop);
 
       if ($(window).scrollTop() > grttop && $(window).scrollTop() < grttop + height) {
