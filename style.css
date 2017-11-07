@@ -657,7 +657,7 @@ thumbcaption:hover div:after{
 
 /*FOOTER SECTION*/
 .footer {
-  background-color: #1a1a1a;
+  background-color: black;
   padding-bottom: 35px;
   padding-top: 35px;
   border-bottom: 3px solid #0066FF;
