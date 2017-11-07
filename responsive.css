@@ -23,7 +23,21 @@ add class="img-responsive" in the HTML to things like images
     text-align: center;
     padding-top: 50px;
   }
-}
+  .certificate {
+    height: 188px;
+  }
+  certifthumbnail{
+    width: 250px;
+    height: 188px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
 
 /* for small tablets */
 @media only screen and (max-width: 768px) {
@@ -31,7 +45,7 @@ add class="img-responsive" in the HTML to things like images
     display: none;
   }
   .header-text, .header-btns {
-    text-align: center;    
+    text-align: center;
     padding-bottom: 50px;
   }
 }
