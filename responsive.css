@@ -38,6 +38,10 @@ add class="img-responsive" in the HTML to things like images
     align-items: center;
     justify-content: center
   }
+  .scroll-top {
+    margin-top: -70px;
+    padding-right: 30px;
+  }
 
 /* for small tablets */
 @media only screen and (max-width: 768px) {

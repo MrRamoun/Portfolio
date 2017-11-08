@@ -685,5 +685,5 @@ thumbcaption:hover div:after{
 .scroll-top a i {
   color: #0066FF;
   font-size: 50px;
-  padding-top: 10px;
+  /*padding-top: 10px;*/
 }
