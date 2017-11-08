@@ -43,8 +43,9 @@ add class="img-responsive" in the HTML to things like images
     padding-right: 30px;
   }
   .footer {
-    background-color: black;    
-    padding-top: 35px;
+    background-color: black;
+    padding-bottom: 0px;
+    padding-top: 20px;
     border-bottom: 3px solid #0066FF;
 
 /* for small tablets */
