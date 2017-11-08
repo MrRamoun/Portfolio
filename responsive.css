@@ -24,11 +24,11 @@ add class="img-responsive" in the HTML to things like images
     padding-top: 50px;
   }
   .certificate {
-    height: 188px;
+    width: 150px;
   }
   certifthumbnail{
-    width: 250px;
-    height: 188px;
+    width: 200px;
+    height: 150px;
     overflow: hidden;
     position: relative;
     display: inline-block;
