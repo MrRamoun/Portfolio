@@ -37,7 +37,7 @@ $(document).ready(function() {
 
       $('.navbar-default').css({
         'background-color': 'rgba(0, 0, 0, 1)',
-        'border-color': '#444'
+        // 'border-color': '#444'
       });
 
       $('navbar-brand img').css({
