@@ -71,7 +71,6 @@ $(document).ready(function() {
     }
   });
 
-
 });
 
 //highlight active navbar items on click
